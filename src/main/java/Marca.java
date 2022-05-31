@@ -15,4 +15,5 @@ public class Marca implements Serializable{
 	@Column (name = "idmarca", nullable = false)
 	private String nome;
 	
+	
 }

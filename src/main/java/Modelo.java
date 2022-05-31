@@ -31,4 +31,7 @@ public class Modelo implements Serializable{
 	@JoinColumn(name="modelo_id")
 	private List<Automovel> automoveis;
 	
+	@OneToOne
+	private Marca marca;
+	
 }
