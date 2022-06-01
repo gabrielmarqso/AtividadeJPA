@@ -48,3 +48,7 @@ public class Automovel implements Serializable{
 		this.modelo = modelo;
 	}
 
+}
+
+
+

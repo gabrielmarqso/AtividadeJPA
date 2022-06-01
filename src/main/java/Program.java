@@ -23,9 +23,20 @@ public class Program {
 		Automovel a1 = new Automovel(01, 2014, 2010, "Carro Completo", (float) 30000 , 0, m1);
 		Marca marca1 = new Marca(26, "Volkswagem");
 	
+		m1.addAuto(a1);
+		marca1.addModelo(m1);
+		
+		
+		em.persist(m1);
+		em.persist(a1);
+		em.persist(marca1);
+		
+		em.getTransaction().commit();
 		
 		
 
 	}
+}
+
 
 

@@ -43,4 +43,11 @@ public class Modelo implements Serializable {
 		this.descricao = descricao;
 		this.potencia = potencia;
 		
+		
 	}
+	
+	public void addAuto(Automovel a) {
+		automoveis.add(a);
+	}
+	
+}

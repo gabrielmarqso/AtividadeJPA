@@ -30,3 +30,8 @@ public class Marca implements Serializable{
 		this.idmarca = idmarca;
 		this.nome = nome;
 	}
+	
+	public void addModelo(Modelo m) {
+		modelos.add(m);
+	}
+}
