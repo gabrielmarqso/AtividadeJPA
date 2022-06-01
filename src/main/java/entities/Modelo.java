@@ -1,3 +1,5 @@
+package entities;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -9,9 +11,11 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+
 @Entity
-public class Modelo implements Serializable{
-	
+public class Modelo implements Serializable {
+
+
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private Integer idmodelo;
@@ -33,5 +37,13 @@ public class Modelo implements Serializable{
 	
 	@OneToOne
 	private Marca marca;
+
+	public Modelo(Integer idmodelo, String descricao, Integer potencia) {
+		this.idmodelo = idmodelo;
+		this.descricao = descricao;
+		this.potencia = potencia;
+		
+	}
+	
 	
 }

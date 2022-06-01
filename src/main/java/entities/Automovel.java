@@ -1,3 +1,5 @@
+package entities;
+
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -28,10 +30,21 @@ public class Automovel implements Serializable{
 	
 	@Column (name = "kilometragem", nullable = false)
 	private Integer kilometragem;
-	
-	
-	
+
+
 	@OneToOne
 	@JoinColumn(name = "modelo_id")
 	private Modelo modelo;
+
+	public Automovel(Integer idauto, Integer anoFabricacao, Integer anoModelo, String observacoes, Float preco,
+			Integer kilometragem, Modelo modelo) {
+		super();
+		this.idauto = idauto;
+		this.anoFabricacao = anoFabricacao;
+		this.anoModelo = anoModelo;
+		this.observacoes = observacoes;
+		this.preco = preco;
+		this.kilometragem = kilometragem;
+		this.modelo = modelo;
+	}
 }
