@@ -48,6 +48,64 @@ public class Automovel implements Serializable{
 		this.modelo = modelo;
 	}
 
+	public Integer getIdauto() {
+		return idauto;
+	}
+
+	public void setIdauto(Integer idauto) {
+		this.idauto = idauto;
+	}
+
+	public Integer getAnoFabricacao() {
+		return anoFabricacao;
+	}
+
+	public void setAnoFabricacao(Integer anoFabricacao) {
+		this.anoFabricacao = anoFabricacao;
+	}
+
+	public Integer getAnoModelo() {
+		return anoModelo;
+	}
+
+	public void setAnoModelo(Integer anoModelo) {
+		this.anoModelo = anoModelo;
+	}
+
+	public String getObservacoes() {
+		return observacoes;
+	}
+
+	public void setObservacoes(String observacoes) {
+		this.observacoes = observacoes;
+	}
+
+	public Float getPreco() {
+		return preco;
+	}
+
+	public void setPreco(Float preco) {
+		this.preco = preco;
+	}
+
+	public Integer getKilometragem() {
+		return kilometragem;
+	}
+
+	public void setKilometragem(Integer kilometragem) {
+		this.kilometragem = kilometragem;
+	}
+
+	public Modelo getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(Modelo modelo) {
+		this.modelo = modelo;
+	}
+	
+	
+
 }
 
 

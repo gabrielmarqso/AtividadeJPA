@@ -33,6 +33,10 @@ public class Program {
 		
 		em.getTransaction().commit();
 		
+		Automovel a = em.find(Automovel.class, marca1);
+		
+		System.out.println("\n *** Automovel: " + a.getObservacoes() + "|"  + a.getAnoFabricacao() + "|" + a.getModelo());
+		
 		
 
 	}
