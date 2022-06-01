@@ -30,6 +30,3 @@ public class Marca implements Serializable{
 		this.idmarca = idmarca;
 		this.nome = nome;
 	}
-	
-	
-}

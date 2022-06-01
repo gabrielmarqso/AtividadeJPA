@@ -44,6 +44,3 @@ public class Modelo implements Serializable {
 		this.potencia = potencia;
 		
 	}
-	
-	
-}

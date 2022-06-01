@@ -47,4 +47,4 @@ public class Automovel implements Serializable{
 		this.kilometragem = kilometragem;
 		this.modelo = modelo;
 	}
-}
+
