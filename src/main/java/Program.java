@@ -37,7 +37,8 @@ public class Program {
 		
 		System.out.println("\n *** Automovel: " + a.getObservacoes() + "|"  + a.getAnoFabricacao() + "|" + a.getModelo());
 		
-		
+		em.close();
+		emf.close();
 
 	}
 }
